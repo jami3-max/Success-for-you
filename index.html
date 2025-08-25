@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Success For You</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: url("background.jpg") no-repeat center center fixed; /* your wallpaper */
+      background-size: cover;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: gold;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #000, 0 0 20px #000;
+      animation: glow 3s infinite alternate, bounce 2s infinite;
+    }
+
+    p {
+      font-size: 1.5em;
+      text-shadow: 0 0 8px #000;
+      animation: fadeColors 5s infinite alternate, bounce 3s infinite;
+    }
+
+    /* Glow color animation */
+    @keyframes glow {
+      0%   { color: gold; }
+      50%  { color: #7CFC00; }   /* lime */
+      100% { color: #00FFFF; }   /* cyan */
+    }
+
+    /* Paragraph color fade */
+    @keyframes fadeColors {
+      0%   { color: #ffffff; }
+      50%  { color: #ffb6c1; }   /* light pink */
+      100% { color: #add8e6; }   /* light blue */
+    }
+
+    /* Gentle bounce */
+    @keyframes bounce {
+      0%,100% { transform: translateY(0); }
+      50%     { transform: translateY(-12px); }
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 All the Best in Your Exams 🎉</h1>
+  <p>You’ve got this! Wishing you success and happiness always.</p>
+</body>
+</html>
